@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="selected_view" type="id"/>
+    
+     <string-array name="spingarr">
+     <item>酒店</item>  
+    <item>餐饮</item>  
+    <item>车行</item>  
+    <item>其他</item>  
+    </string-array>
+    
+</resources>

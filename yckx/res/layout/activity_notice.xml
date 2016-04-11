@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/include_actionbar"/>
+    
+    <!-- 支持下拉刷新，侧滑删除的ListView -->
+    <com.brother.utils.view_def.listview.pulltorefreshswipemenulistviewsample.PullToRefreshSwipeMenuListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView">
+        
+    </com.brother.utils.view_def.listview.pulltorefreshswipemenulistviewsample.PullToRefreshSwipeMenuListView>
+    
+
+</LinearLayout>

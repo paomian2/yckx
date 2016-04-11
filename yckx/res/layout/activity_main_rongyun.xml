@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotoFriendsView"
+        android:text="进入好友列表界面"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotoView"
+        android:text="启动单聊界面"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotoChatRoom"
+        android:text="加入聊天室"/>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_homeasup_default" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/tv_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Uwash"
+                android:textSize="30dp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appName_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="窝窝头.优车快洗" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userName_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appName_layout"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/icon_phone"
+                android:gravity="center"
+                android:hint="@string/phoneNum"
+                android:numeric="integer"
+                android:padding="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/code_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/icon_verificationcode"
+                android:gravity="center"
+                android:hint="@string/code"
+                android:padding="2dp" />
+
+            <RelativeLayout
+                android:id="@+id/send_code_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="4"
+                android:background="@drawable/edit_background" >
+
+                <TextView
+                    android:id="@+id/sendCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/sendcode"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/code_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+            <EditText
+                android:password="true"
+                android:id="@+id/pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/icon_password"
+                android:gravity="center"
+                android:hint="@string/regist_pwd"
+                android:padding="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd_ok_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwd_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+            <EditText
+                android:password="true"
+                android:id="@+id/pwd_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/icon_password"
+                android:gravity="center"
+                android:hint="@string/pwd_ok"
+                android:padding="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/end_regist_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwd_ok_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_regist"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_background"
+                android:text="@string/regist"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/end_modify_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwd_ok_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_modify"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_background"
+                android:text="@string/modify_ok"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yckx_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwd_ok_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="@string/yckx_agreement"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

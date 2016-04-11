@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" 
+    android:padding="20dp">
+    
+    <TextView 
+        android:background="@drawable/edit_background_red"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="上传头像"
+        android:id="@+id/upImage"/>
+    
+    <TextView 
+        android:background="@drawable/edit_background_red"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="取消"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/upImageCancel"/>
+    
+
+</LinearLayout>

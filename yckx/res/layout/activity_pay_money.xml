@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F0F0F0">
+    
+    <include layout="@layout/include_actionbar"/>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/black"/>
+    
+    <RelativeLayout
+        android:id="@+id/layout_wowotou"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/wowoImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/wowoImg"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/wowoImg"
+            android:text="窝窝头余额支付" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:maxEms="12"
+            android:text="适合已经在优车快洗充值的用户，个人中心可查询"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/payWayImg_wowotou"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_payway_normal" />
+
+    </RelativeLayout>
+    
+    
+     <RelativeLayout
+        android:id="@+id/layout_wechat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/wechat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_payway_wc" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/wechat"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/wechat"
+            android:text="微信支付" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:maxEms="12"
+            android:text="适合手机安装了微信且已经开通微信钱包业务的用户"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/payWayImg_wechat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_payway_normal" />
+
+    </RelativeLayout>
+    
+     
+     <RelativeLayout
+        android:id="@+id/layout_zhifubao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/zhifubao"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_payway_zfb" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/zhifubao"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/zhifubao"
+            android:text="支付宝支付" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:maxEms="12"
+            android:text="适合手机安装了支付宝应用且已经开通现金业务的用户"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/payWayImg_zhifubao"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_payway_normal" />
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/layout_union"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/payunion"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_payway_union" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/payunion"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/payunion"
+            android:text="银联支付" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:maxEms="12"
+            android:text="适合手机安装了支付宝应用且已经开通现金业务的用户"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/payWayImg_union"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_payway_normal" />
+
+    </RelativeLayout>
+    
+     
+     <LinearLayout 
+         android:padding="20dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
+         <Button 
+             android:id="@+id/wx_test"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:digits="@+id/exi_test"
+             android:text="微信支付测试"/>
+          <Button 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:digits="@+id/zifu_success"
+             android:text="支付成功测试"/>
+         
+     </LinearLayout>
+    
+
+</LinearLayout>

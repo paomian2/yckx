@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:minHeight="35dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:background="@drawable/test_fragment_wowo_useimg"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/isSelect"
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:textSize="20dp"
+                            android:id="@+id/commaneyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公司名称" />
+                        <LinearLayout
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/test_rectangle">
+                                <TextView
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="退"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/test_rectangle">
+                                <TextView
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="证"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/test_rectangle">
+                                <TextView
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="保"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/img_evluation1"
+                            android:background="@drawable/test_evaluate_normal"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp" />
+                        <ImageView
+                            android:id="@+id/img_evluation2"
+                            android:background="@drawable/test_evaluate_normal"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp" />
+                        <ImageView
+                            android:id="@+id/img_evluation3"
+                            android:background="@drawable/test_evaluate_normal"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp" />
+                        <ImageView
+                            android:id="@+id/img_evluation4"
+                            android:background="@drawable/test_evaluate_normal"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp" />
+                        <ImageView
+                            android:id="@+id/img_evluation5"
+                            android:background="@drawable/test_evaluate_normal"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp" />
+                        <TextView
+                            android:id="@+id/tv_score"
+                            android:layout_marginLeft="10dp"
+                            android:text="0分"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:text="来自168条点评"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/test_fragment_map_park" />
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:textSize="10dp"
+                                android:id="@+id/parkCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20/100" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginLeft="9dp"
+                                android:src="@drawable/test_fragment_map_ixian" />
+
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:textSize="10dp"
+                                android:maxLength="6"
+                                android:id="@+id/tv_parkPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5元/小时" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginLeft="8dp"
+                                android:src="@drawable/test_fragment_map_location2" />
+
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:textSize="10dp"
+                                android:singleLine="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_ditance"
+                                android:text="距离" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layout_daohang"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:background="@drawable/test_fragment_map_daohang"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp" />
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:textSize="10dp"
+                                android:text="到这里"
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

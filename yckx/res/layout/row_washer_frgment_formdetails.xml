@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/leagueNameImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="19dp"
+            android:src="@drawable/lianmengdian_p" />
+
+        <TextView
+            android:id="@+id/leagueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/leagueNameImg"
+            android:text="联盟点名字" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="horizontal"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/doorService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/productName_static"
+            android:layout_below="@+id/productName_static"
+            android:text="@string/product_Store" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥24.5"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/productTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doorService"
+            android:layout_below="@+id/doorService"
+            android:text="2015年01月01日  周日  08点00分" />
+
+        <TextView
+            android:id="@+id/productName_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/productImg"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/productImg"
+            android:text="@string/productName" />
+
+        <com.brother.yckx.view.CircleImageView
+            android:id="@+id/productImg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:src="@drawable/icon_my_car" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FAFAFA" >
+
+        <LinearLayout
+            android:id="@+id/card_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="19dp" >
+
+            <TextView
+                android:id="@+id/serviceCar_staticTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serviceCard_StaticTV" />
+
+            <TextView
+                android:id="@+id/productCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝马" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="19dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/servicePhone" />
+
+            <TextView
+                android:id="@+id/productPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15011429785" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/formstatus_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="19dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formStatus" />
+
+            <TextView
+                android:id="@+id/productStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在处理" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ActualPay_static"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ActualPay_static" />
+
+            <TextView
+                android:id="@+id/actualPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥1.23" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:background="#FAFAFA" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" 
+            android:paddingRight="10dp">
+            
+              <TextView
+                android:id="@+id/pay_atonce"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_background_black"
+                android:gravity="center"
+                android:text="@string/payAtonce"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/evaluate_atonce"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_background_black"
+                android:gravity="center"
+                android:text="@string/evaluate_reply"
+                android:visibility="gone" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/sendVoice"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_background_black"
+                android:gravity="center"
+                android:text="@string/sendVoice" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/callPhone"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_background_black"
+                android:gravity="center"
+                android:text="@string/callPhone" />
+
+            <TextView
+                android:id="@+id/cancelProduce"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_background_black"
+                android:gravity="center"
+                android:text="@string/cancelProduce"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="#FAFAFA" >
+    </LinearLayout>
+
+</LinearLayout>

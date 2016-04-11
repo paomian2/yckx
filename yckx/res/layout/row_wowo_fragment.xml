@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.brother.yckx.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/griditems_bg"
+    android:orientation="vertical" >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:id="@+id/circleImageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/icon_defalut_wowo_test" />
+         <RelativeLayout
+             android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/layout_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="泡面无敌棒棒糖" />
+
+                <ImageView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/icon_defalut_sex_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_name"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/tv_business_mark"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/icon_defalut_business_mark"
+                    android:gravity="center"
+                    android:text="商"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/business_indentify"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/icon_defalut_identification" />
+            </LinearLayout>
+        </RelativeLayout>
+
+</com.brother.yckx.view.SquareLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/addOrders_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp" >
+
+        <com.brother.yckx.view.CircleImageView
+            android:id="@+id/cardImg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34dp"
+            android:src="@drawable/icon_product_default" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cardImg"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/cardImg"
+            android:text="优车快洗"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/productDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cardImg"
+            android:layout_alignLeft="@+id/productName"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="优车快洗" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_detail_darkgray" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/productName"
+            android:layout_alignBottom="@+id/productName"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:text="00元"
+            android:textColor="#FF0000" />
+    </RelativeLayout>
+
+</LinearLayout>

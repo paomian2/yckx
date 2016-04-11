@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- AccessionActivity(登记入册)页面中各Fragment上事件tag值 -->
+    <!-- 个人信息时退出当前帐号 -->
+    <item name="tag_aperson_logout" type="id"/>
+    <!-- 个人信息时返回 -->
+    <item name="tag_aperson_back" type="id"/>
+    <!-- 登录时返回 -->
+    <item name="tag_alogin_logon_back" type="id"/>
+    <!-- 注册时返回 -->
+    <item name="tag_alogin_register_back" type="id"/>
+
+    <!-- HomeActivity(主页面)页面中各Fragment上事件tag值 -->
+    <!-- 新闻组列表中进入新闻 -->
+    <item name="tag_hnewsgroup_enternews" type="id"/>
+    <!-- 收藏列表中进入新闻 -->
+    <item name="tag_hcollect_enternews" type="id"/>
+
+    <!-- BrowseActivity(浏览页面)页面中各Fragment上事件tag值 -->
+    <!-- 新闻浏览中返回 -->
+    <item name="tag_bnews_back" type="id"/>
+    <!-- 新闻浏览中评论 -->
+    <item name="tag_bnews_comment" type="id"/>
+    <!-- 新闻浏览中分享 -->
+    <item name="tag_bnews_share" type="id"/>
+    <!-- 新闻浏览中收藏 -->
+    <item name="tag_bnews_collect" type="id"/>
+    <!-- 新闻评论浏览中返回 -->
+    <item name="tag_bcomment_back" type="id"/>
+
+</resources>

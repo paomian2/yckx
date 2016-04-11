@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="156****456" />
+
+        <TextView
+            android:id="@+id/provice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phone"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="5dp"
+            android:text="省份" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/provice"
+            android:layout_below="@+id/provice"
+            android:layout_marginTop="5dp"
+            android:text="具体位置" />
+
+    </RelativeLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#F0F0F0" />
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/select_defalut"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_tick_normal" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/select_defalut"
+                android:text="设置为默认" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignLeft="@+id/editImg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="编辑" />
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:src="@drawable/icon_delete" />
+
+           <TextView
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/textView2"
+               android:layout_alignBottom="@+id/textView2"
+               android:layout_toRightOf="@+id/delete"
+               android:text="删除" />
+
+           <ImageView
+               android:id="@+id/editImg"
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="60dp"
+               android:layout_toRightOf="@+id/textView1"
+               android:src="@drawable/icon_edit" />
+
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical" 
+    android:minHeight="35dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/isSelect"
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/commaneyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司名称" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_park_blue" />
+
+                <TextView
+                    android:id="@+id/parkCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车位情况"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="9dp"
+                    android:src="@drawable/icon_distance_pink" />
+
+                <TextView
+                    android:maxLength="6"
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/icon_businesshours_orange" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/businesshours_orange"
+                    android:text="停车时间" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/btn_orders"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="#41B576"
+                android:text="一键下单"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

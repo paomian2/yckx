@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/biaozhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical" 
+        android:text="标注"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="58dp"
+        android:layout_toRightOf="@+id/biaozhu"
+        android:text="内容" />
+    
+    <View 
+        android:layout_below="@+id/biaozhu"
+        android:layout_width="fill_parent"
+        android:layout_height="1.6dp"
+        android:background="#F0F0F0"/>
+
+</RelativeLayout>

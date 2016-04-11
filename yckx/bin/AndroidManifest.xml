@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brother.yckx"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- 截屏 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 电话拨打 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取电话状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- WIFI权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 高德地图权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 导航 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 腾讯信鸽sdk权限 -->
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <!-- 融云权限 start -->
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 融云权限end -->
+
+
+    <!-- 银联支付 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="android.permission.android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- shareSDK -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="com.brother.App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="787f11113d5e4eacf5c6133d58a574f4" />
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="vnroth0kryzko" />
+
+        <activity android:name="com.brother.TestActivity" >
+        </activity>
+
+        <!-- vnroth0kryzko -->
+        <activity
+            android:name="com.brother.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.TestActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.SearchActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.map.POISearchActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.map.POIGJZSearchActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.map.GeocoderActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.map.WalkMapBaseActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.WasherMainForOrderActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.map.DriveMapBaseActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.map.NativeLocationActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.SearCarMessageActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.CarDetailedActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.AdressActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.AddAdressActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.AgreementActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.CommentActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.CompanyIntroductionActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.EditNicknameActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.FeedBackActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.FormActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.FormActivity_for_Wahser" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.FormDetailActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.GetPhotoActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.GetPhotoToudloadCarImgActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.GarageManagerActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.HistoricalEvaluationActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.HomeActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.LeadActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.LoginActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.LBSLatLngLocationActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.NoticeListActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.OpenCameraActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.OrderClassFragmentActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.OrderDetaileActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.OrdersActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalEditActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalNewsActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalNewsDetailsActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PushPersonalNewsActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalWalletActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalBalanceDetailActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalTakeCashActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalRechargeActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalAddProductsActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalSpaceImageDetailActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalBusinessHoursActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalEditAdressActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalEditphoneActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalEditCompanyIntroduceActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PayMoneyActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx2d43b874490dc17d" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PayOnSpotActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherPunchActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.RegisteActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.RegisterCompanyActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.RegisterCompanyActivity2"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalReadMeActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalBusinessManagerActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalLoadImgActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.PersonalAddBusinessMemberActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.SettingActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.SignActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.commonly.ShowAllPictrueActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.commonly.ShowAllPictrueDetailedActivity"></activity>
+        <activity android:name="com.brother.yckx.control.activity.commonly.TouristCommentActivity"></activity>
+        
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherSettleActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.owner.WebViewActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherUpdatePark" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherGetPhoneActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherMainActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherMainForOrderActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherNoticeListActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherOderDetailActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherHistoryFormActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.rongyun.ui.activity.SubConversationListActivtiy" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.washer.WasherFeedbackActivity" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.rongyun.ui.activity.WasherConversationListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.brother.yckx"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.rongyun.ui.activity.ConversationActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.brother.yckx"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.rongyun.rongyun_utils.LoginActivity_rongyun" >
+        </activity>
+        <activity android:name="com.brother.yckx.control.activity.rongyun.rongyun_utils.MainActivity_rongyun" >
+        </activity>
+
+        <!-- 银联支付  start -->
+
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 银联支付 end -->
+
+
+        <!-- 微信支付 -->
+        <activity
+            android:name="net.sourceforge.simcpux.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx2d43b874490dc17d" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.sourceforge.simcpux.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="net.sourceforge.simcpux.SendToWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic" />
+        <activity
+            android:name="net.sourceforge.simcpux.AddFavoriteToWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic" />
+        <activity
+            android:name="net.sourceforge.simcpux.GetFromWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic" />
+        <activity
+            android:name="net.sourceforge.simcpux.ShowFromWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic" />
+        <activity
+            android:name="net.sourceforge.simcpux.PayActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic" />
+
+        <receiver android:name=".AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 微信支付   end -->
+
+
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- rong yun  start -->
+
+        <activity android:name="com.brother.yckx.control.activity.rongyun.ActivityConnectService" >
+        </activity>
+
+        <!-- rong yun  end -->
+
+
+        <!-- alipay sdk end -->
+
+
+        <!-- 腾讯信鸽     sdk   start -->
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true" >
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="com.brother.yckx.control.activity.WasherMainActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.brother.yckx.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100179188" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="AKB71A67DQ4D" />
+
+        <!-- 腾讯信鸽         sdk  end -->
+
+
+        <!-- 融云sdk信息start -->
+        <!-- begin imlib request -->
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.CommandService"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" > <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="io.rong.imkit.tools.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.PreviewPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" >
+        </service>
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver android:name="io.rong.imlib.ipc.PushMessageReceiver" >
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+        <!-- end -->
+
+
+        <!-- End Rong Cloud -->
+
+
+        <!-- shareSDK -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

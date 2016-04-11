@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_actionbar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/black" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/league_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="联盟点名称" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#F6F6F6" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <com.brother.yckx.view.CircleImageView
+                        android:id="@+id/cardImg"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_my_car" />
+
+                    <TextView
+                        android:id="@+id/service_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/cardImg"
+                        android:layout_centerHorizontal="true"
+                        android:text="服务项目名称"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/product_jianjie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/service_product_name"
+                        android:layout_alignTop="@+id/price"
+                        android:maxLines="2"
+                        android:text="简介内容" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/service_product_name"
+                        android:text="￥00"
+                        android:textColor="#FF0000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:id="@+id/service_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="服务信息" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#F6F6F6" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="联系方式" />
+
+                    <EditText
+                        android:id="@+id/talk_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="请在此处输入联系人手机号"
+                        android:maxLength="11"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/open_key"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="车辆信息" />
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/cardMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="请点击右侧选择车辆信息"
+                        android:maxLength="11"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/open_cardMessage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_select" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="服务方式" />
+
+                    <TextView
+                        android:id="@+id/service_style_daodian"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/tv_blue_left"
+                        android:gravity="center"
+                        android:text="到店服务" />
+
+                    <TextView
+                        android:id="@+id/service_style_shangmen"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/tv_line_blue"
+                        android:gravity="center"
+                        android:text="上门服务" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="预约时间" />
+
+                   
+                     <EditText
+                        android:id="@+id/promise_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="请输入时间"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/time_select"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_time" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:text="车辆位置" />
+
+                    <EditText
+                        android:gravity="center_vertical"
+                        android:focusable="false"
+                        android:id="@+id/cardAdress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="车辆常用位置中选择现在的车辆位置"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/location_dingwei"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/icon_locate" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="留言" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#F6F6F6" />
+
+                <EditText
+                    android:id="@+id/liuyan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    android:hint="有什么要对美护师说的呢?(可不填)" />
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="指定美护师" />
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/washerPhone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="美护师手机号(可不填)" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:paddingLeft="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp">
+                <TextView 
+                    android:textColor="@color/red"
+                    android:text="显示后台的提示信息"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实际支付金额:"
+                    android:textColor="#FF0000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/actualPay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#FF0000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/payOk"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0"
+                    android:background="#FF0000"
+                    android:gravity="center"
+                    android:text="立即付款"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#F6F6F6" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

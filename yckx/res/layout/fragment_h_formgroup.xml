@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res/com.brother.yckx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- pstsIndicatorColor 指示器颜色 -->
+    <!-- pstsIndicatorColor 滑动条的颜色 -->
+    <!-- pstsUnderlineColor 滑动条所在的那个全宽线的颜色 -->
+    <!-- pstsDividerColor 每个标签的分割线的颜色 -->
+    <!-- pstsIndicatorHeightHeight 滑动条的高度 -->
+    <!-- pstsUnderlineHeight 滑动条所在的那个全宽线的高度 -->
+    <!-- pstsDividerPadding 分割线底部和顶部的填充宽度 -->
+    <!-- pstsTabPaddingLeftRight 每个标签左右填充宽度 -->
+    <!-- pstsTabBackground  每个标签的背景，应该是一个StateListDrawable -->
+    <!-- pstsShouldExpand 如果设置为true，每个标签是相同的控件，均匀平分整个屏幕，默认是false -->
+    <!-- pstsTextAllCaps 如果为true，所有标签都是大写字母，默认为true -->
+    <!--
+         <com.androide.lib3.view.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        app:pstsDividerColor="#0000"
+        app:pstsIndicatorColor="#FF33B5E6"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsTabPaddingLeftRight="14dp" />
+    -->
+
+    <com.androide.lib3.view.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        app1:pstsDividerColor="#0000"
+        app1:pstsIndicatorColor="#FF33B5E6"
+        app1:pstsIndicatorHeight="2dp"
+        app1:pstsTabPaddingLeftRight="14dp" >
+    </com.androide.lib3.view.astuetz.PagerSlidingTabStrip>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/createImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shijian_do" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/createTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="2015-12-12" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="订单生成成功" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_unpay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/payImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shijian_undo" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="20dp"
+                        android:text="下一步" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_payOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="支付订单" />
+
+                        <View
+                            android:id="@+id/line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.8dp"
+                            android:layout_below="@+id/tv_payOrder"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#F6F6F6" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_btn_evaluation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/line"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="10dp" >
+
+                            <TextView
+                                android:id="@+id/btn_payOrder"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_background_red"
+                                android:gravity="center"
+                                android:text="立即支付" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 已经支付 -->
+
+            <LinearLayout
+                android:id="@+id/layout_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/payImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shijian_do"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/payTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-12-12" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_paySuccess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="支付成功" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_washer_Receive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/washerArriveImg_resiveOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shijian_do" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_wahserTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true" >
+
+                        <TextView
+                            android:id="@+id/washerDoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2015-12-12" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/wahserMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_wahserTime"
+                        android:background="@color/white"
+                        android:padding="10dp" >
+
+                        <com.brother.yckx.view.CircleImageView
+                            android:id="@+id/washerImg"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/icon_default_user" />
+
+                        <TextView
+                            android:id="@+id/wahserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/washerImg"
+                            android:layout_marginLeft="17dp"
+                            android:layout_toRightOf="@+id/washerImg"
+                            android:text="洗护师姓名" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_evaluate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/wahserName"
+                            android:layout_toRightOf="@+id/washerImg" >
+
+                            <ImageView
+                                android:id="@+id/wahser_img1"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/icon_evaluate_selected" />
+
+                            <ImageView
+                                android:id="@+id/wahser_img2"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/icon_evaluate_selected" />
+
+                            <ImageView
+                                android:id="@+id/wahser_img3"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/icon_evaluate_selected" />
+
+                            <ImageView
+                                android:id="@+id/wahser_img4"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/icon_evaluate_normal" />
+
+                            <ImageView
+                                android:id="@+id/wahser_img5"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/icon_evaluate_normal" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/gradLine"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.8dp"
+                            android:layout_below="@+id/washerImg"
+                            android:layout_marginTop="5dp"
+                            android:background="#F0F0F0" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_opreator_orther"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gradLine"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:id="@+id/phoneCall"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="打电话"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/yuyin"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="语音聊天"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/orderCancel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="申请取消"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_washerArrive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/washerArriveImg_arrive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shijian_do" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/wahserArriveTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="2015-12-12" />
+
+                    <RelativeLayout
+                        android:id="@+id/wahserMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/wahserArriveTime"
+                        android:background="@color/white" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="洗护师已经到达车辆位置" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_washerCheck"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/washerCheckCarImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shijian_do" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/washerCheckCarTime"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_uploadImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="洗护师上传检查车辆图片" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.8dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#F0F0F0" />
+
+                            <RelativeLayout
+                                android:id="@+id/wahserMessage"
+                                android:layout_width="fill_parent"
+                                android:layout_height="80dp"
+                                android:padding="10dp" >
+
+                                <com.brother.yckx.view.image.CacheImageView
+                                    android:id="@+id/img2"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignTop="@+id/img1"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_toRightOf="@+id/img1"
+                                    android:src="@drawable/icon_image_toadd" />
+
+                                <com.brother.yckx.view.image.CacheImageView
+                                    android:id="@+id/img3"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignTop="@+id/img2"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_toRightOf="@+id/img2"
+                                    android:src="@drawable/icon_image_toadd" />
+
+                                <com.brother.yckx.view.image.CacheImageView
+                                    android:id="@+id/img1"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="34dp"
+                                    android:src="@drawable/icon_image_toadd" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/washerCheckCarTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40dp"
+                        android:text="2015-12-12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_washerWashering"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/waherImge_washing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shijian_do" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/washeringTime"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/wahserMessage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="80dp"
+                            android:background="@color/white" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="洗护师已经开始洗车" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/washeringTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="2015-12-12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_washerEnd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/waherImge_washEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shijian_do" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/washerEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-12-12" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/washerEndTime" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout_wahserEnd"
+                            android:layout_width="fill_parent"
+                            android:layout_height="80dp"
+                            android:background="@color/white"
+                            android:paddingBottom="5dp" >
+
+                            <TextView
+                                android:id="@+id/tv_static"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="洗车完毕" />
+
+                            <View
+                                android:id="@+id/line"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.8dp"
+                                android:layout_below="@+id/tv_static"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#F6F6F6" />
+
+                            <TextView
+                                android:id="@+id/btn_pingjia"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/edit_background_red"
+                                android:gravity="center"
+                                android:text="立即评价" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 评论内容 -->
+
+            <LinearLayout
+                android:id="@+id/layout_pingjia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shijian_do"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/pingjiaTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="2015-12-12" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pingjiaTime" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <ImageView
+                                    android:id="@+id/pingjiaImg1"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:src="@drawable/icon_evaluate_selected" />
+
+                                <ImageView
+                                    android:id="@+id/pingjiaImg2"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:src="@drawable/icon_evaluate_selected" />
+
+                                <ImageView
+                                    android:id="@+id/pingjiaImg3"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:src="@drawable/icon_evaluate_selected" />
+
+                                <ImageView
+                                    android:id="@+id/pingjiaImg4"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:src="@drawable/icon_evaluate_selected" />
+
+                                <ImageView
+                                    android:id="@+id/pingjiaImg5"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:src="@drawable/icon_evaluate_selected" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="0.8dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#F0F0F0" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" >
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="7" >
+
+                                    <TextView
+                                        android:id="@+id/pingjiaContent"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="评价内容" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="3" >
+
+                                    <com.brother.yckx.view.image.CacheImageView
+                                        android:id="@+id/pinglunImg1"
+                                        android:layout_width="55dp"
+                                        android:layout_height="55dp"
+                                        android:layout_gravity="center" />
+
+                                    <com.brother.yckx.view.image.CacheImageView
+                                        android:id="@+id/pinglunImg2"
+                                        android:layout_width="55dp"
+                                        android:layout_height="55dp"
+                                        android:layout_gravity="center" />
+
+                                    <com.brother.yckx.view.image.CacheImageView
+                                        android:id="@+id/pinglunImg3"
+                                        android:layout_width="55dp"
+                                        android:layout_height="55dp"
+                                        android:layout_gravity="center" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="20dp" >
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 下一步XXX   start -->
+
+            <LinearLayout
+                android:id="@+id/layout_next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shijian_undo"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/payTime" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_netDo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:text="XXXXXXXXX" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/payTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下一步" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 下一步XXX  end -->
+
+
+            <!-- 订单完成    start -->
+
+            <LinearLayout
+                android:id="@+id/layout_orderEnd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shijian_do" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderEnd" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/white" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="您的订单已完成，感谢您的支持" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 订单完成    end -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

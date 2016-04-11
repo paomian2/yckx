@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="#F0F0F0" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formNo_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formNo" />
+
+                <TextView
+                    android:id="@+id/formNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formNo_static"
+                    android:text="No2345678" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formStatus_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formStatus_detail" />
+
+                <TextView
+                    android:id="@+id/formStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formStatus_static"
+                    android:text="未支付" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formTime_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formTime" />
+
+                <TextView
+                    android:id="@+id/formCreateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formTime_static"
+                    android:text="2015年..." />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formReceiveTime_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formReceiveTime" />
+
+                <TextView
+                    android:id="@+id/formReceiveTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formReceiveTime_static"
+                    android:text="2015年..." />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formCompleteTime_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formCompleteTime" />
+
+                <TextView
+                    android:id="@+id/formCompleteTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formCompleteTime_static"
+                    android:text="2015年..." />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formPay_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formPay" />
+
+                <TextView
+                    android:id="@+id/formPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formPay_static"
+                    android:text="￥20.0" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formPayType_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formPayType" />
+
+                <TextView
+                    android:id="@+id/formPayType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formPayType_static"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#F0F0F0" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formStore_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formStore" />
+
+                <TextView
+                    android:id="@+id/formStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formStore_static"
+                    android:text="南宁市A地点" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formProject_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formProject" />
+
+                <TextView
+                    android:id="@+id/formProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formProject_static"
+                    android:text="洗车+停车" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formCard_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formCard" />
+
+                <TextView
+                    android:id="@+id/formCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formCard_static"
+                    android:text="宝马" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/formStyle_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/formStyle" />
+
+                <TextView
+                    android:id="@+id/formStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/formStyle_static"
+                    android:text="到店享受" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.6dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#F0F0F0" />
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"></LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

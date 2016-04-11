@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F0F0F0">
+    
+    <include layout="@layout/include_actionbar"/>
+    
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/black"/>
+    
+    <LinearLayout 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:layout_gravity="center" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系号码"/>
+        <EditText 
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:hint="联系人手机号码"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:id="@+id/phone"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+         android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_gravity="center" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省、市、区"/>
+        <EditText 
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:hint="点击选择、右侧按钮定位"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:id="@+id/provice"/>
+        <ImageView 
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/dingwei"
+            android:src="@drawable/icon_locate"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:layout_gravity="center" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车辆位置"/>
+        <EditText 
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:hint="请在此处输入车辆具体位置"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:id="@+id/carAdress"/>
+    </LinearLayout>
+
+</LinearLayout>

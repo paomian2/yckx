@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <com.brother.yckx.view.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_default_user" />
+
+        <TextView
+            android:id="@+id/tv_userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/userImg"
+            android:text="153****456"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_commentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2015-01-16 18:20"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#F5F5F5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/starImge1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/icon_evaluate_normal" />
+
+        <ImageView
+            android:id="@+id/starImge2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/icon_evaluate_normal" />
+
+        <ImageView
+            android:id="@+id/starImge3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/icon_evaluate_normal" />
+
+        <ImageView
+            android:id="@+id/starImge4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/icon_evaluate_normal" />
+
+        <ImageView
+            android:id="@+id/starImge5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/icon_evaluate_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/tv_commentContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论内容" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <com.brother.yckx.view.image.CacheImageView
+            android:id="@+id/img1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:visibility="gone" />
+
+        <com.brother.yckx.view.image.CacheImageView
+            android:id="@+id/img2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:visibility="gone" />
+
+        <com.brother.yckx.view.image.CacheImageView
+            android:id="@+id/img3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务产品:" />
+
+        <TextView
+            android:id="@+id/tv_serviceProducetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="洗车" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间:" />
+
+        <TextView
+            android:id="@+id/tv_serviceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-01-20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/washer_reply_do_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_reply_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="8dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/ev_washerRepale"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#F0F0F0"
+            android:hint="点击回复车主"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/washerReplySend"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:background="#F0F0F0"
+            android:gravity="center"
+            android:text="发送"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wahser_replay_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_reply_gray"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="8dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/replyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="美护师回复" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+</LinearLayout>

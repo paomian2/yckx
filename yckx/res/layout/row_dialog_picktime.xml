@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:padding="20dp">  
+  
+    <LinearLayout 
+         android:layout_centerInParent="true"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_yearOrmon"
+        android:orientation="horizontal">
+        
+        <EditText 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="年"/>
+        <EditText 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="月"/>
+        
+    </LinearLayout>
+    
+    <com.brother.yckx.view.PickerView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <!-- <RelativeLayout  
+        android:id="@+id/layout_hoursAndmon"
+        android:layout_below="@+id/layout_yearOrmon"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_centerInParent="true"  
+        android:background="#ffffff" >  
+        
+        
+  
+        <com.brother.yckx.view.PickerView
+            android:id="@+id/hours_pv"  
+            android:layout_width="80dp"  
+            android:layout_height="160dp" />  
+  
+        <TextView  
+            android:id="@+id/hurs_tv"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerVertical="true"  
+            android:layout_toRightOf="@id/hours_pv"  
+            android:text="时"  
+            android:textColor="#ffaa33"  
+            android:textSize="26sp"  
+            android:textStyle="bold" />  
+  
+        <com.brother.yckx.view.PickerView
+            android:id="@+id/min_pv"  
+            android:layout_width="80dp"  
+            android:layout_height="160dp"  
+            android:layout_toRightOf="@id/hurs_tv" />  
+  
+        <TextView  
+            android:id="@+id/min_tv"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerVertical="true"  
+            android:layout_toRightOf="@id/min_pv"  
+            android:text="分"  
+            android:textColor="#ffaa33"  
+            android:textSize="26sp"  
+            android:textStyle="bold" />  
+    </RelativeLayout> 
+    <LinearLayout 
+        android:layout_below="@+id/layout_hoursAndmon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button 
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderTimeOK"
+            android:text="确定"/>
+        <Button 
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderTimeCancel"
+            android:text="取消"/>
+          
+    </LinearLayout> -->
+  
+</RelativeLayout>  

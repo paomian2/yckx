@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/temp_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" 
+            android:background="#E8E8E9"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/btn_return"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_homeasup_default" />
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_poisearch" />
+
+                <AutoCompleteTextView
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:id="@+id/keyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="请输入关键字"
+                    android:inputType="text|textAutoComplete"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/gaosiImage"/>
+        <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false" >
+    </ListView>
+    </FrameLayout>
+
+</LinearLayout>

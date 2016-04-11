@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F6F6F6">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#F6F6F6"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/layout_return"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_defalut_return" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="编辑营业时间" />
+
+        <TextView
+            android:id="@+id/btncompelete"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="#2DBA5C"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+    
+    <RelativeLayout 
+        android:id="@+id/layout_startTime"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/home_entry_item"
+        android:layout_marginTop="20dp">
+        <LinearLayout 
+            android:padding="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间:"/>
+            <TextView 
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:id="@+id/tv_startTime"/>
+        </LinearLayout>
+        <ImageView 
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_defalut_to"/>
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+     <RelativeLayout 
+        android:id="@+id/layout_endTime"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/home_entry_item">
+        <LinearLayout 
+            android:padding="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间:"/>
+            <TextView 
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24:00"
+                android:id="@+id/tv_endTime"/>
+        </LinearLayout>
+        <ImageView 
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_defalut_to"/>
+    </RelativeLayout>
+
+</LinearLayout>

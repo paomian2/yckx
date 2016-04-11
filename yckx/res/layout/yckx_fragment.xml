@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.brother.yckx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <com.brother.yckx.view.listviewscroll.MultiCardMenu
+       app:background_layout="@layout/background_view" 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+             <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="380dip"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#BFBFBF" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/test_fragment_map_businesslist"
+                        android:gravity="center_vertical" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#BFBFBF" />
+
+                    <ListView
+                        android:background="@color/white"
+                        android:id="@+id/recommentListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+        </LinearLayout>
+   </com.brother.yckx.view.listviewscroll.MultiCardMenu>
+
+    
+</LinearLayout>

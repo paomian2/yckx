@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 指定公司的图片 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+        <LinearLayout
+            android:id="@+id/layout_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp" >
+
+                <ImageView
+                    android:id="@+id/companeyImg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_effect_washer" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:id="@+id/dazhe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_stop"
+                        android:layout_alignBottom="@+id/tv_stop"
+                        android:layout_centerHorizontal="true"
+                        android:text="8"
+                        android:textColor="@color/red"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/tv_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/dazhe"
+                        android:text="停车"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_stop_dazhe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/dazhe"
+                        android:layout_alignBottom="@+id/dazhe"
+                        android:layout_toRightOf="@+id/dazhe"
+                        android:text="折"
+                        android:textColor="@color/white" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_business"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dazhe"
+                        android:orientation="horizontal" >
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:textSize="15dp"
+                            android:id="@+id/fress_static"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="免费"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/free_stop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+
+                        <TextView
+                             android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="|"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                             android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="费用"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/expense_stop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥00"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+
+
+                        <TextView
+                             android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="剩余"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/chewei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/red"
+                            android:textSize="15dp" />
+
+                        <TextView
+                             android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个车位"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp" >
+
+                        <TextView
+                            android:id="@+id/companyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+                            android:text="公司名称" />
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                             android:layout_marginTop="10dp"
+                            android:id="@+id/companyImg2"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/companyName"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/bg_effect_washer" />
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/xingImg1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignLeft="@+id/companyName"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_evaluate_normal" />
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/xingImg2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_toRightOf="@+id/xingImg1"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_evaluate_normal" />
+                         <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/xingImg3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_toRightOf="@+id/xingImg2"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_evaluate_normal" />
+                         
+                         <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/xingImg4"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_toRightOf="@+id/xingImg3"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_evaluate_normal" />
+                         
+                            <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/xingImg5"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_toRightOf="@+id/xingImg4"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_evaluate_normal" />
+                        
+                     
+                       
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/imgPhone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="17dp"
+                            android:src="@drawable/icon_operation_contact" />
+
+                        <ImageView
+                             android:layout_centerVertical="true"
+                            android:id="@+id/imgLocation"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="17dp"
+                            android:src="@drawable/icon_locate" />
+
+                        <TextView
+                            android:maxEms="12"
+                             android:layout_centerVertical="true"
+                            android:id="@+id/companyAdress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgLocation"
+                            android:layout_toRightOf="@+id/imgLocation"
+                            android:text="公司地点" />
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/productListView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+
+                    <LinearLayout
+                        android:id="@+id/layout_kefu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:paddingLeft="20dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="联系客服" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="更多信息" />
+
+                        <TextView
+                            android:id="@+id/moreMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/actionbar"
+        layout="@layout/include_actionbar"/>
+    
+    <com.brother.yckx.view.scroll2page.DefinedScrollView 
+        android:layout_below="@+id/actionbar"
+        android:id="@+id/definedview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.brother.yckx.view.scroll2page.DefinedScrollView>
+    
+   
+    
+
+</RelativeLayout>

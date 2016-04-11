@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/layout_return"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_defalut_return" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="充值" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/white">
+        <LinearLayout 
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额(元)"/>
+            <EditText 
+                android:layout_marginLeft="10dp"
+                android:hint="请输入充值金额"
+                android:id="@+id/ev_inputMoney"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+            android:background="#FF6600"
+            android:textColor="@color/white"
+            android:text="充值"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+
+</LinearLayout>

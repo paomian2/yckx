@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D7DCE1"
+    android:orientation="vertical" 
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/province_jing"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="京" />
+
+        <Button
+            android:id="@+id/province_hu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="沪" />
+
+        <Button
+            android:id="@+id/province_zhe"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="浙" />
+
+        <Button
+            android:id="@+id/province_su"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="苏" />
+
+        <Button
+            android:id="@+id/province_yue"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="粤" />
+
+        <Button
+            android:id="@+id/province_lu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="鲁" />
+
+        <Button
+            android:id="@+id/province_jin"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="晋" />
+
+        <Button
+            android:id="@+id/province_ji"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="冀" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/province_yu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="豫" />
+
+        <Button
+            android:id="@+id/province_chuan"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="川" />
+
+        <Button
+            android:id="@+id/province_yuzhou"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="渝" />
+
+        <Button
+            android:id="@+id/province_liao"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="辽" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/province_jilin"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="吉" />
+
+        <Button
+            android:id="@+id/province_heilongjiang"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="黑" />
+
+        <Button
+            android:id="@+id/province_wanning"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="皖" />
+
+        <Button
+            android:id="@+id/province_e"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="鄂" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/province_xiang"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="相" />
+
+        <Button
+            android:id="@+id/province_gangzhou"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="赣" />
+
+        <Button
+            android:id="@+id/province_min"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="闽" />
+
+        <Button
+            android:id="@+id/province_shan"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="陕" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/province_gang"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="甘" />
+
+        <Button
+            android:id="@+id/province_ningxia"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="宁" />
+
+        <Button
+            android:id="@+id/province_meng"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="蒙" />
+
+        <Button
+            android:id="@+id/province_tianjing"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="津" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/province_gui"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="贵" />
+
+        <Button
+            android:id="@+id/province_yun"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="云" />
+
+        <Button
+            android:id="@+id/province_guangxi"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="桂" />
+
+        <Button
+            android:id="@+id/province_qiong"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="琼" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/province_qinghai"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="青" />
+
+        <Button
+            android:id="@+id/province_xinjiang"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="新" />
+
+        <Button
+            android:id="@+id/province_xizang"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="藏" />
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/province_wanning"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_entry_item"
+            android:text="" />
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_actionbar" />
+
+    <View style="@style/horizontal_line" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/loading_rotate"
+            android:indeterminateDuration="400"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_showOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.shizhefei.view.indicator.ScrollIndicatorView
+                android:id="@+id/tabs_viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp" >
+            </com.shizhefei.view.indicator.ScrollIndicatorView>
+
+            <View style="@style/horizontal_line" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

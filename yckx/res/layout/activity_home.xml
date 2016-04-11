@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+  <!--  <include layout="@layout/include_actionbar"/> -->
+   
+   <com.brother.yckx.view.CanSrcollViewPager
+       android:layout_weight="1"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:id="@+id/viewpager"></com.brother.yckx.view.CanSrcollViewPager>
+   <LinearLayout
+       android:layout_weight="0"
+       android:id="@+id/bottom"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="#F6F6F6"
+       android:orientation="horizontal"
+       android:paddingTop="5dp">
+       
+       <LinearLayout 
+           android:orientation="vertical"
+           android:id="@+id/wowo_layout"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_width="0dp">
+             <ImageView 
+               android:layout_width="45dp"
+               android:layout_height="20dp"
+               android:id="@+id/wowo_img"
+               android:src="@drawable/icon_defalut_home_wowo"
+               android:layout_gravity="center"/>
+             <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/wowo_tv"
+               android:text="@string/yckx_tv"
+               android:layout_gravity="center"
+               android:textSize="10dp"
+               android:textColor="#9D9D9D"/>
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/yckx_layout"
+           android:orientation="vertical">
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/yckx_img"
+               android:src="@drawable/tabbar_main_normal"
+               android:layout_gravity="center"/>
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/yckx_tv"
+               android:text="@string/yckx_tv"
+               android:layout_gravity="center"
+               android:textSize="10dp"
+               android:textColor="#9D9D9D"/>
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/chatonline_layout"
+           android:orientation="vertical">
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/chat_img"
+               android:src="@drawable/tabbar_user_center_normal"
+               android:layout_gravity="center"/>
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/chat_tv"
+               android:text="@string/chat_tv"
+               android:layout_gravity="center"
+               android:textSize="10dp"
+               android:textColor="#9D9D9D"/>
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/member_layout"
+           android:orientation="vertical">
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/member_img"
+               android:src="@drawable/tabbar_user_center_normal"
+               android:layout_gravity="center"/>
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/member_tv"
+               android:text="@string/member_tv"
+               android:layout_gravity="center"
+               android:textSize="10dp"
+               android:textColor="#9D9D9D"/>
+       </LinearLayout>
+       
+   </LinearLayout>
+    
+
+</LinearLayout>

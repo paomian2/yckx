@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#F6F6F6">
+    
+    <RelativeLayout 
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:id="@+id/layout_return"
+            android:layout_centerVertical="true"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_defalut_return"/>
+        </LinearLayout>
+        <TextView 
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签名"/>
+        <TextView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:id="@+id/btncompelete"
+            android:gravity="center"
+            android:text="完成"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:background="#78CA1F"/>
+    </RelativeLayout>
+    
+   <LinearLayout 
+       android:background="#E8E8E8"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical">
+        <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="10dp" 
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入你的签名"/>
+        <EditText 
+            android:enabled="true"	
+            android:gravity="top"	
+            android:inputType="textMultiLine"	
+            android:minLines="8"	
+            android:maxLines="10"	
+            android:scrollbars="vertical"
+            android:id="@+id/ev_sign"
+            android:layout_marginLeft="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+    </LinearLayout>
+       
+   </LinearLayout>
+</LinearLayout>

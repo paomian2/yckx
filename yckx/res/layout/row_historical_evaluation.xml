@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <com.brother.yckx.view.CircleImageView
+            android:id="@+id/circleImageView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/btn_user" />
+
+        <TextView
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="123***1234" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="10dp"
+                android:singleLine="true"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="2015-10-30 10:35" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="#F5F7F7" />
+    
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:maxLines="3"
+            android:maxLength="100"
+            android:id="@+id/evalutionConten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论内容aaaaaaaaaaaaaaaaaaaaaaaaaaaa"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp">
+        <!-- 动态生成图片 -->
+        <ImageView 
+            android:layout_gravity="center"
+            android:id="@+id/upImageView1"
+            android:src="@drawable/icon_my_car"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        
+        <ImageView 
+              android:layout_gravity="center"
+           android:layout_marginLeft="10dp"
+            android:id="@+id/upImageView2"
+            android:src="@drawable/icon_my_car"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        
+        <ImageView  
+             android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/upImageView3"
+            android:src="@drawable/icon_my_car"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务产品:"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_service"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务时间:"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_time"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!-- 美护师回复 -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="洗护师回复:"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xhs_respose"/>
+    </LinearLayout>
+
+</LinearLayout>

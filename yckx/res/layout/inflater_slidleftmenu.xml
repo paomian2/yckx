@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wahser_main_left"
+    android:orientation="vertical" >
+
+    <!-- android:background="@color/leftmenu_item_bg_normal" -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp" >
+
+                <com.brother.yckx.view.CircleImageView
+                    android:id="@+id/washerImg"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_default_user" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignTop="@+id/washerImg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/washerImg"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/washerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="洗护师名字"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/layout_pingjia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/starImg1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/icon_evaluate_normal" />
+
+                            <ImageView
+                                android:id="@+id/starImg2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/icon_evaluate_normal" />
+
+                            <ImageView
+                                android:id="@+id/starImg3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/icon_evaluate_normal" />
+
+                            <ImageView
+                                android:id="@+id/starImg4"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/icon_evaluate_normal" />
+
+                            <ImageView
+                                android:id="@+id/starImg5"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/icon_evaluate_normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_qiandan"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_robbed"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="进入抢单" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_chat_message"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_contact"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="聊天消息" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_push"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_push"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="推送通知" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_orders"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_orders"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="历史订单" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_evaluate"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_evaluate"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="历史评价" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_punch"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_punch"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="我要打卡" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_updatepark"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_updatepark"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="车位更新" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                android:id="@+id/tv_leftmenu_settleaccount"
+                style="@style/leftmenu_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_washer_settleaccount"
+                android:drawableRight="@drawable/icon_detail_white"
+                android:text="结算" />
+
+            <View style="@style/horizontal_line" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_leftmenu_system"
+        style="@style/leftmenu_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:drawableLeft="@drawable/icon_washer_system"
+        android:text="设置" />
+
+</LinearLayout>

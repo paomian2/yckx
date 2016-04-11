@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">优车快洗</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- actionbar_title -->
+    <string name="actionbar_title_news">最新资讯</string>
+    <string name="actionbar_title_about">关于我们</string>
+    <string name="actionbar_title_appstore">精彩应用</string>
+    <string name="actionbar_title_setting">设置</string>
+    <string name="actionbar_title_collect">收藏</string>
+    <!-- leftmenu文本 -->
+    <string name="leftmenu_item_news">最新资讯</string>
+    <string name="leftmenu_item_collect">收藏</string>
+    <string name="leftmenu_item_feedback">反馈</string>
+    <string name="leftmenu_item_setting">设置</string>
+    <string name="leftmenu_item_update">版本更新</string>
+    <string name="leftmenu_item_about">关于我们</string>
+    <string name="leftmenu_item_app">精彩应用</string>
+    <string name="leftmenu_item_user">注册/登录</string>
+    <!--  -->
+    <string name="setting_item_clear">清理缓存</string>
+    <string name="setting_item_about">关于我们</string>
+    <string name="setting_item_help">帮助说明</string>
+    <string name="setting_item_study">意见反馈</string>
+    <string name="setting_item_app">精彩应用</string>
+    <string name="setting_item_update">版本更新</string>
+    <string name="setting_item_push">推送通知</string>
+    <string name="setting_item_nopic">无图模式</string>
+    <string name="title_activity_browse">BrowseActivity</string>
+    <string name="title_activity_apps">AppsActivity</string>
+    <string name="title_activity_accession">AccessionActivity</string>
+    <!-- 下拉 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新…</string>
+    <!-- 上拉 -->
+    <string name="pull_to_refresh_from_bottom_pull_label">加载更多…</string>
+    <string name="pull_to_refresh_from_bottom_release_label">放开加载更多…</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载…</string>
+
+    <!-- 下来刷新，侧滑控件 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 优车快洗 -->
+    <string name="home_title_bar">窝窝头.优车快洗</string>
+    <string name="yckx_tv">优车快洗</string>
+    <string name="chat_tv">在线聊天</string>
+    <string name="member_tv">会员中心</string>
+
+    <!-- 下单界面 -->
+    <string name="addOrderTitle">服务详情</string>
+
+    <!-- 会员中心 -->
+    <string name="login">登录</string>
+    <string name="userName_tv">您注册的手机号</string>
+    <string name="pwd_tv">您的密码</string>
+    <string name="regist">立即注册</string>
+    <string name="forget">忘记密码</string>
+    <string name="phoneNum">请输入您的手机号</string>
+    <string name="code">验证码</string>
+    <string name="sendcode">发送验证码</string>
+    <string name="regist_pwd">请输入登录密码</string>
+    <string name="pwd_ok">请确认登录密码</string>
+    <string name="modify_ok">确认修改</string>
+    <string name="yckx_agreement">&#060;&#060;优车快洗用户使用协议&#062;&#062;</string>
+    <string name="yckx_usercenter_tv">优车快洗竭诚为您服务</string>
+
+    <!-- 用户中心 -->
+    <string name="usercenter">个人中心</string>
+    <string name="balance">余额</string>
+    <string name="kaci">卡次</string>
+    <string name="tongzhi">消息中心</string>
+    <string name="myform">我的订单</string>
+    <string name="evaluate">历史评价</string>
+    <string name="mycar">我的车库</string>
+    <string name="adress">常用位置</string>
+    <string name="opinion">意见反馈</string>
+    <string name="aboutus">关于我们</string>
+    <string name="developing">研发中</string>
+    
+    <!-- 意见反馈 -->
+    <string name="feedb_tittle">意见反馈</string>
+    
+    <!-- 优车快洗使用协议 -->
+     <string name="useAgreement_tittle">使用协议</string>
+
+    <!-- 设置 -->
+    <string name="userName">用户名</string>
+    <string name="newfunction">用户名简介.暂时不开放</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="user_agreement">用户使用协议</string>
+    <string name="newuser_lead">新手引导</string>
+    <string name="customerService">客服咨询</string>
+    <string name="exit_login">退 出 登 录</string>
+
+    <!-- 通知 -->
+    <string name="noticeTitle">消息列表</string>
+    <string name="notice_sys">系统通知</string>
+    <string name="notice_form">我的订单状态变更</string>
+    <string name="notice_sys_txt">欢迎来到优车快洗,我们将为您提供服务！如果有任何问题，可立即联系客服，或者提交意见</string>
+
+    <!-- 订单详情 -->
+
+    <string name="productAndService">产品&amp;服务</string>
+    <string name="formTitle">订单</string>
+    <string name="productName">产品名称</string>
+    <string name="product_Store">到站服务</string>
+    <string name="serviceCard_StaticTV">服务车辆:</string>
+    <string name="servicePhone">联系电话:</string>
+    <string name="formStatus">订单状态:</string>
+    <string name="ActualPay_static">实际金额:</string>
+    <string name="evaluate_atonce">立即评价</string>
+     <string name="evaluate_reply">立即回复</string>
+    <string name="payAtonce">立即支付</string>
+    <string name="sendVoice">发送语音</string>
+    <string name="callPhone">拨打电话</string>
+    <string name="cancelProduce">取消订单</string>
+    <string name="formdetail_title">订单详情</string>
+    <string name="formNo">订单编号</string>
+    <string name="formStatus_detail">订单状态</string>
+    <string name="formTime">下单时间</string>
+    <string name="formReceiveTime">接单时间</string>
+    <string name="formCompleteTime">完成时间</string>
+    <string name="formPay">支付金额</string>
+    <string name="formPayType">支付方式</string>
+    <string name="formStore">联盟点</string>
+    <string name="formProject">服务项目</string>
+    <string name="formCard">服务车辆</string>
+    <string name="formStyle">服务方式</string>
+
+    <!-- 评论订单 -->
+    <string name="evaluationTitle">订单评论</string>
+
+    <!-- 支付页面 -->
+    <string name="selectFormPayStyle">选择支付方式</string>
+
+    <!-- 订单确认 -->
+    <string name="orderOk_title">订单确认</string>
+
+    <!-- 我的车库 -->
+    <string name="carManagerTitle">我的车库</string>
+    <string name="AddCardTitle">添加修改车辆</string>
+
+    <!-- 历史评价 -->
+    <string name="historical_evaluation_title">历史评价</string>
+
+    <!-- 地址 -->
+    <string name="adress_title">地址管理</string>
+    <string name="addadress_title">地址信息</string>
+
+    <!-- 洗护师 -->
+    <!-- 主界面 -->
+    <string name="washerMain_title">抢单</string>
+    <string name="washerMain">美护师主界面</string>
+
+    <!-- 评价页面 -->
+    <string name="pingjiaMain">评价</string>
+
+    <!-- 处理订单 -->
+    <string name="dingdan_chuli">处理订单</string>
+    <string name="daka_title">上下班打卡</string>
+    <string name="updatePark">更新车位</string>
+    <string name="settle_title">结算</string>
+    <string name="wenan1">温馨提示:为保护您的合法权益，且不影响到结算系统关于个人收入的计算，请美护师或个人代理,严格遵守&lt;&lt;优车快洗个人代理协议&gt;&gt;中关于上下班打卡制度的说明!</string>
+
+    <!-- 导航  讯飞 -->
+    <string name="start_title">示例代码</string>
+    <string name="base_function">基本功能</string>
+    <string name="hud_title">HUD显示</string>
+    <string name="extend_title">扩展功能</string>
+    <string name="extend_navi_navi">自定义导航</string>
+    <string name="navibar_title">路径规划</string>
+    <string name="navi_car">驾车</string>
+    <string name="navi_foot">步行</string>
+    <string name="start_hud_navi">HUD显示</string>
+    <string name="complex_function">综合展示</string>
+    <string name="navi_empty_car">"驾   车"</string>
+    <string name="navi_empty_foot">"步   行"</string>
+    <string name="navi_start">"起    点"</string>
+    <string name="navi_middle">途经点</string>
+    <string name="navi_end">"终    点"</string>
+    <string name="navi_strategy">"策    略"</string>
+    <string name="navi_route">路径规划</string>
+    <string name="navi_navi">模拟导航</string>
+    <string name="start_navi_navi">实时导航</string>
+    <string name="navi_strategy_speed">速度最快</string>
+    <string name="navi_strategy_cost">避免收费</string>
+    <string name="navi_strategy_distance">距离最短</string>
+    <string name="navi_strategy_nohighway">不走高速快速路</string>
+    <string name="navi_strategy_timenojam">时间最短且躲避拥堵</string>
+    <string name="navi_strategy_costnojam">避免收费且躲避拥堵</string>
+    <string name="theme_blue">经典蓝</string>
+    <string name="theme_pink">可爱粉</string>
+    <string name="theme_white">简约白</string>
+    <string name="setting">设置</string>
+    <string name="day">白天</string>
+    <string name="night">夜间</string>
+    <string name="yes">"  是  "</string>
+    <string name="no">"  否  "</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="daynightmode">"昼夜模式    "</string>
+    <string name="deviationrecalculation">"偏航重算    "</string>
+    <string name="jamrecalculation">"拥堵重算    "</string>
+    <string name="trafficbroadcast">"交通播报    "</string>
+    <string name="camerabroadcast">摄像头播报</string>
+    <string name="screenon">"屏幕常亮    "</string>
+    <string name="routeshow">线路展示</string>
+    <string name="tapmap">点击地图设置</string>
+    <string name="starttapmap">我的位置（可点击地图设置）</string>
+    <string name="walkdescription">步行状态不可用</string>
+    <string name="routeinfo">全程   --公里/--分钟    收费 --元</string>
+    <string name="routeinfo_1">全程 </string>
+    <string name="routeinfo_2">公里/</string>
+    <string name="routeinfo_3">"分钟    收费"</string>
+    <string name="routeinfo_4">元</string>
+    <string name="routeinfo_default">--</string>
+    <string name="app_id">输入您讯飞的appid</string>
+    <string name="mypoistion">我的位置</string>
+    <string name="mappoistion">地图点选</string>
+    <string name="positioninfo">位置信息</string>
+
+    <string-array name="preference_values_tts_role">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>vixq</item>
+        <item>vixf</item>
+        <item>vixm</item>
+        <item>vixl</item>
+        <item>vixr</item>
+        <item>vixyun</item>
+        <item>vixk</item>
+        <item>vixqa</item>
+        <item>vixying</item>
+        <item>vixx</item>
+        <item>vinn</item>
+        <item>vils</item>
+    </string-array>
+
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+    <string name="intell_bd_title">智能播报</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="app_back">返回</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_finish">完成</string>
+    <string name="app_find">查找</string>
+    <string name="app_edit">编辑</string>
+
+    <!-- applet -->
+    <string name="applet_secimg_title">填写验证码</string>
+    <string name="applet_secimg_change">换一张图片</string>
+    <string name="applet_seccode_tip">验证码不能为空</string>
+    <string name="applet_seccode_fail_tip">验证码错误，请重新输入</string>
+
+    <!-- verify -->
+    <string name="verify_password_null_tip">密码不能为空，请输入密码</string>
+
+    <!-- format -->
+    <string name="fmt_date">M月d日</string>
+    <string name="fmt_longdate">yyyy年M月d日</string>
+    <string name="fmt_datetime" formatted="false">M月d日 %skk:mm</string>
+    <string name="fmt_patime">kk:mm</string>
+    <string name="fmt_longtime" formatted="false">yyyy年M月d日 %skk:mm</string>
+    <string name="fmt_in60min" formatted="false">%d分钟前</string>
+    <string name="fmt_justnow">1分钟内</string>
+    <string name="fmt_dawn">凌晨</string>
+    <string name="fmt_morning">早上</string>
+    <string name="fmt_noon">中午</string>
+    <string name="fmt_afternoon">下午</string>
+    <string name="fmt_evening">晚上</string>
+    <string name="fmt_pre_yesterday">昨天</string>
+    <string name="fmt_iap_err" formatted="false">网络连接不可用，请稍候重试</string>
+    <string name="hello">Hello World, SDKSampleActivity!</string>
+    <string name="app_share">分享</string>
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="goto_pay">跳转到支付界面</string>
+    <string name="goto_fav">跳转到收藏界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+    <string name="send_to_wx_title">发送到微信</string>
+    <string name="get_from_wx_title">从微信接收</string>
+    <string name="show_from_wx_title">显示微信请求的消息</string>
+    <string name="pay_by_wx_title">通过微信支付</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="launch_from_wx">Launch From Weixin</string>
+
+    <!-- WXMediaMessage -->
+    <string name="input_openid">输入openid</string>
+    <string name="input_scope">输入scope</string>
+    <string name="send">发送到微信</string>
+    <string name="receive">从微信接收</string>
+    <string name="is_timeline">是否分享到朋友圈</string>
+    <string name="send_text">发送文本</string>
+    <string name="send_text_default">这段文字发送自微信SDK示例程序</string>
+    <string name="send_img">发送图片</string>
+
+    <string-array name="send_img_item">
+        <item>发送图片的二进制数据</item>
+        <item>发送图片的本地路径</item>
+        <item>发送图片的URL</item>
+    </string-array>
+
+    <string name="send_img_file_not_exist">文件不存在</string>
+    <string name="send_file">发送文件</string>
+
+    <string-array name="send_file_item">
+        <item>发送文件的二进制数据</item>
+        <item>发送文件的本地路径</item>
+    </string-array>
+
+    <string name="send_file_file_not_exist">文件不存在</string>
+    <string name="send_pic">发送照片</string>
+    <string name="send_music">发送音乐</string>
+
+    <string-array name="send_music_item">
+        <item>发送音乐url</item>
+        <item>发送低带宽音乐url</item>
+    </string-array>
+
+    <string name="send_video">发送视频</string>
+
+    <string-array name="send_video_item">
+        <item>发送视频url</item>
+        <item>发送低带宽视频url</item>
+    </string-array>
+
+    <string name="send_webpage">发送网页</string>
+
+    <string-array name="send_webpage_item">
+        <item>发送网页url</item>
+    </string-array>
+
+    <string name="send_appdata">发送app消息</string>
+
+    <string-array name="send_appdata_item">
+        <item>发送app文件本地路径</item>
+        <item>发送app二进制数据</item>
+        <item>发送无附件的app</item>
+    </string-array>
+
+    <string name="send_emoji">发送表情消息</string>
+
+    <string-array name="send_emoji_item">
+        <item>发送表情本地路径</item>
+        <item>发送表情二进制数据</item>
+    </string-array>
+    <string-array name="send_emoji_item_format">
+        <item>发送GIF图片</item>
+        <item>发送非GIF图片</item>
+    </string-array>
+
+    <!-- GetFromWXActivity -->
+    <string name="share_text_to_weixin">回应文本到微信</string>
+    <string name="share_text_default">这段文字回应自微信SDK示例程序</string>
+    <string name="share_url_to_weixin">回应URL到微信</string>
+    <string name="share_pic_to_weixin">回应图片到微信</string>
+    <string name="share_music_to_weixin">回应音乐到微信</string>
+    <string name="share_video_to_weixin">回应视频到微信</string>
+    <string name="share_appdata_to_weixin">回应app消息到微信</string>
+    <string name="register_as_weixin_app_sender">注册微信事件发送器</string>
+    <string name="get_token_from_weixin">获取微信访问Token</string>
+    <string name="unregister_from_weixin">从微信反注册</string>
+    <string name="show_from_wx_tip">这个界面用于显示微信向第三方app请求显示的信息</string>
+
+    <!-- PayActivity -->
+    <string name="pay_by_wx">客户端签名微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="input_reqkey">输入reqkey</string>
+    <string name="input_package_value">输入package value</string>
+    <string name="input_sign">输入sign</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="paying">支付中</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!-- 融云start -->
+    <!-- 登录 -->
+    <string name="app_login_show">用户名</string>
+    <string name="app_login_password">密码</string>
+    <string name="app_sign_in">登录</string>
+    <string name="app_sign_up">注册</string>
+    <string name="app_fogot_password">忘记密码?</string>
+    <string name="app_pass_error">密码错误</string>
+    <string name="app_user_error">账号错误</string>
+    <string name="app_user_cookie">cookie 错误</string>
+    <string name="app_first_login">请先登陆</string>
+    <string name="app_cookie_null">cookie 为空</string>
+    <string name="login_erro_is_null">"用户名、密码不能为空"</string>
+
+    <!-- 主页 -->
+    <string name="main_name">融云</string>
+    <string name="main_conversation">会话</string>
+    <string name="main_group">群组</string>
+    <string name="main_chatroom">聊天室</string>
+    <string name="main_customer">客服</string>
+    <string name="add_chat">发起聊天</string>
+    <string name="add_select_group">选择群组</string>
+    <string name="add_voip">网络电话</string>
+    <string name="add_contacts">通讯录</string>
+    <string name="set_personal_information">我的账号</string>
+    <string name="set_news_reminded">新消息提醒</string>
+    <string name="set_privacy">隐私</string>
+    <string name="set_set">设置</string>
+    <string name="set_rongcloud">关于融云</string>
+    <string name="set_sign_out">退出</string>
+    <string name="set_logout">注销</string>
+    <string name="de_save">"保存"</string>
+    <string name="register_user_exits">"该邮箱已注册"</string>
+    <string name="no_read_message">"···"</string>
+
+    <!-- register activity -->
+    <string name="register_is_null">"邮箱、密码、昵称 不能为空"</string>
+    <string name="register_success">"注册成功"</string>
+    <string name="register_failure">"注册失败"</string>
+    <string name="register_input_email">"输入邮箱"</string>
+    <string name="register_input_password">"输入密码"</string>
+    <string name="register_input_nickname">"昵称"</string>
+    <string name="register_btn_argee">"注册"</string>
+    <string name="register_email_error">"邮箱地址不合法"</string>
+    <string name="login_success">"登录成功"</string>
+    <string name="login_failure">"登录失败"</string>
+    <string name="register_user_agreement">"阅读用户协议"</string>
+    <string name="register_agree">"同意并注册"</string>
+    <string name="register_declaration">"仅供演示融云SDK功能使用"</string>
+
+    <!-- 设置 -->
+    <string name="new_message_notice">消息免打扰</string>
+    <string name="new_message_show">新消息提醒</string>
+    <string name="new_message_voice">声音</string>
+    <string name="new_message_vibration">震动</string>
+    <string name="new_message_prompt_voice">新消息提示音</string>
+    <string name="new_message_follow_system">跟随系统</string>
+    <string name="add_validation">加我时需要验证</string>
+    <string name="the_blacklist">黑名单</string>
+    <string name="join_the_blacklist">加入黑名单</string>
+    <string name="portrait">头像</string>
+    <string name="my_username">昵称</string>
+    <string name="good_name">好的名字可以让你的朋友更容易记住</string>
+    <string name="new_name">新昵称</string>
+    <string name="update_log">更新日志</string>
+    <string name="function_introduce">功能介绍</string>
+    <string name="version_number">V2.1.0</string>
+    <string name="dv_document">开发者文档</string>
+    <string name="rongcloud_web">官方网站</string>
+    <string name="new_version_update">当前版本</string>
+    <string name="update_profile_success">昵称修改成功</string>
+    <string name="update_profile_faiture">昵称修改失败</string>
+    <string name="profile_not_null">昵称不能为空</string>
+    <string name="de_set_clear_message">清空聊天记录</string>
+    <string name="de_notification_start">开始时间</string>
+    <string name="de_notification_end">结束时间</string>
+    <string name="de_fr_delete">删除并退出</string>
+    <string name="de_discussion_name">"讨论组名称"</string>
+    <string name="de_setting_set_top">置顶</string>
+    <string name="de_setting_conversation_notify">新消息通知</string>
+    <string name="de_setting_clear_msg_name">清空聊天信息</string>
+    <string name="commoditydescription">现货文化生活杂志 homeland家园2014年10月第106期</string>
+    <string name="the_price">￥13.00</string>
+    <string name="rc_connect">Connect</string>
+    <string name="rc_app_self_chat">Self Chat</string>
+    <string name="rc_friend">Friend</string>
+    <string name="rc_information">send Information message</string>
+    <string name="rc_app_conversationlist">enter conversationlist</string>
+    <!-- friend list -->
+    <string name="friend_list_multi_choice_comfirt_btn">"确定(%1$s)"</string>
+    <string name="de_item_delete_friend">"删除"</string>
+    <string name="de_new_friends">"新的朋友"</string>
+    <string name="friend_id">"Id:"</string>
+
+    <!-- group -->
+    <string name="group_intro">"群简介"</string>
+    <string name="group_number">"群人数"</string>
+    <string name="group_myname">"我在本群的昵称"</string>
+    <string name="group_join">"加入"</string>
+    <string name="group_quit">"删除并退出"</string>
+    <string name="group_chat">"聊天"</string>
+    <string name="group_join_success">"加入群组成功"</string>
+    <string name="group_quit_success">"退出群组成功"</string>
+    <string name="group_is_full">"群组人数已满"</string>
+    <string name="group_user_info">"群名片"</string>
+    <string name="group_user_intro">修改你的群名片</string>
+
+    <!-- personal -->
+    <string name="personal_title">"详细资料"</string>
+    <string name="personal_area">"地区"</string>
+    <string name="personal_signature">"个性签名"</string>
+    <string name="personal_send_message">"发消息"</string>
+    <string name="add_friend">"添加到通讯录"</string>
+    <string name="personal_send_voip">"语音聊天"</string>
+
+    <!-- public account -->
+    <string name="public_account_search">"搜索"</string>
+    <string name="public_add_address">"添加好友"</string>
+    <string name="friend_send">"好友请求已发送"</string>
+    <string name="friend_send_success">"发送好友请求成功"</string>
+    <!-- actionbar title -->
+    <string name="de_actionbar_myacc">"个人账号"</string>
+    <string name="de_actionbar_detail">"个人详情"</string>
+    <string name="de_actionbar_sub_group">"群组"</string>
+    <string name="de_actionbar_sub_private">"我的私人会话"</string>
+    <string name="de_actionbar_sub_discussion">"我的讨论组"</string>
+    <string name="de_actionbar_sub_system">"系统消息"</string>
+    <string name="de_actionbar_sub_defult">"聊天"</string>
+    <string name="de_actionbar_set_conversation">"聊天设置"</string>
+    <string name="de_actionbar_set_public">"公众号"</string>
+    <string name="de_actionbar_update_discussion">"修改讨论组昵称"</string>
+    <string name="de_actionbar_discussion">"聊天室"</string>
+    <string name="de_actionbar_system">"系统消息"</string>
+    <string name="phone_camera">Camera</string>
+    <string name="de_dialog_item_message_delete">删除消息</string>
+    <string name="de_notification_information">开启后，在设定时间段内收到新消息时不会响铃或振动。</string>
+    <string name="de_plugins_image">图片</string>
+    <string name="de_plugins_camera">相机</string>
+    <string name="de_group_list_default_discussion_name">讨论组</string>
+    <string name="de_message_content_draft">[草稿]</string>
+    <string name="de_message_at_me">[有人@我]</string>
+
+    <!-- Aming 10月重构版 -->
+    <string name="folder_all">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+
+    <!-- 融云end -->
+    
+
+</resources>

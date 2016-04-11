@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_wite_dialog">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="更新停车位" />
+
+    <LinearLayout
+        android:id="@+id/layout_first"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车位总数" />
+
+        <TextView
+            android:id="@+id/carParkTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_second"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="剩余车位" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background_black" >
+
+            <EditText
+                android:id="@+id/spacePark"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_background_black"
+                android:ems="10"
+                android:gravity="center"
+                android:paddingLeft="10dp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/tuige"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tuige" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/layout_second"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_circle_gree"
+            android:text="确定"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cacel"
+                 android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_circle_gree"
+            android:text="取消"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_second"
+        android:layout_width="250dp"
+        android:layout_height="100dp">
+    </LinearLayout>
+    
+
+</RelativeLayout>

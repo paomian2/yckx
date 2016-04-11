@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#F6F6F6"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/wowo_Img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/icon_default_wowo" />
+
+        <EditText
+            android:id="@+id/ev_wowo_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#F6F6F6"
+            android:hint="窝窝头" />
+
+        <ImageView
+            android:id="@+id/img_wowo_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:background="@drawable/icon_defalut_search" />
+
+        <ImageView
+            android:id="@+id/img_wowo_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/icon_default_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/icon_defalut_recomment" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="1"
+                android:text="推荐会员"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+        <!-- 心原型 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <com.brother.yckx.view.MyHorizontalScrollView
+                 android:id="@+id/id_horizontalScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:scrollbars="none" >
+                <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+            </com.brother.yckx.view.MyHorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <com.brother.yckx.view.CircleImageView
+                    android:id="@+id/img_recomment_1"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_test" />
+
+                <TextView
+                    android:id="@+id/recomment_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_recomment_1"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="猪的世界你不懂" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <com.brother.yckx.view.CircleImageView
+                    android:id="@+id/img_recomment_2"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_test" />
+
+                <TextView
+                    android:id="@+id/recomment_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_recomment_2"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <com.brother.yckx.view.CircleImageView
+                    android:id="@+id/img_recomment_3"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_test" />
+
+                <TextView
+                    android:id="@+id/recomment_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_recomment_3"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <com.brother.yckx.view.CircleImageView
+                    android:id="@+id/img_recomment_4"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_test" />
+
+                <TextView
+                    android:id="@+id/recomment_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_recomment_4"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <com.brother.yckx.view.CircleImageView
+                    android:id="@+id/img_recomment_5"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_test" />
+
+                <TextView
+                    android:id="@+id/recomment_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_recomment_5"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout>

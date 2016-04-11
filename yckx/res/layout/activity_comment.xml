@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/gaosi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#F0F0F0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/evaluate_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="订单评价"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/evaluate_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="发布" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/starimg1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/icon_evaluate_normal" />
+
+                    <ImageView
+                        android:id="@+id/starimg2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/icon_evaluate_normal" />
+
+                    <ImageView
+                        android:id="@+id/starimg3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/icon_evaluate_normal" />
+
+                    <ImageView
+                        android:id="@+id/starimg4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/icon_evaluate_normal" />
+
+                    <ImageView
+                        android:id="@+id/starimg5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/icon_evaluate_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+          
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" 
+                android:id="@+id/layout_edittext">
+
+                <EditText
+                    android:id="@+id/evaluate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/getphotos1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/icon_image_toadd"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/getphotos2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/icon_image_toadd"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/getphotos3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/icon_image_toadd"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingRight="5dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

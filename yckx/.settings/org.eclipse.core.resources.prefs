@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/com/brother/MainActivity.java=UTF-8
+encoding//src/com/brother/yckx/action/ActionUtils.java=UTF-8
+encoding//src/com/brother/yckx/control/activity/map/TTSController.java=UTF-8
+encoding//src/com/brother/yckx/control/activity/map/util/AMapUtil.java=UTF-8
+encoding//src/com/brother/yckx/control/activity/map/util/ChString.java=UTF-8
+encoding//src/com/brother/yckx/control/activity/map/util/Constants.java=UTF-8
+encoding//src/com/brother/yckx/control/activity/map/util/ToastUtil.java=UTF-8
+encoding//src/com/brother/yckx/control/activity/rongyun/model/RongIMFriend.java=UTF-8
+encoding//src/com/brother/yckx/view/WheelView.java=UTF-8
+encoding//src/com/brother/yckx/view/banner/ClickableImageView.java=UTF-8
+encoding//src/com/brother/yckx/view/banner/FileUtils.java=UTF-8
+encoding//src/com/brother/yckx/view/banner/ImageCycleView.java=UTF-8
+encoding//src/com/brother/yckx/view/banner/ImageLoaderHelper.java=UTF-8
+encoding//src/com/shizhefei/fragment/LazyFragment.java=UTF-8
+encoding//src/com/shizhefei/view/indicator/slidebar/DrawableBar.java=UTF-8

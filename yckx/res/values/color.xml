@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 常用颜色 -->
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="black">#000</color>
+    <color name="gray">#A1A1A1</color>
+    <color name="transparent">#0000</color>
+    <color name="dialog_blue">#33CCFF</color>
+    <color name="green_for_order">#00FF00</color>
+    <color name="click_enabal">#EBEBEB</color>
+    <color name="green2">#66CC00</color>
+    <!-- 地图中商家列表中被选中的item -->
+    <color name="item_select">#41B576</color>
+
+    <!-- 左侧滑动菜单 -->
+    <color name="leftmenu_user_name">#ffd4d4d4</color>
+    <color name="leftmenu_item_text_normal">#ffd4d4d4</color>
+    <color name="leftmenu_item_text_pressed">#ff4e4e4e</color>
+    <color name="leftmenu_item_bg_normal">#ff393939</color>
+    <color name="leftmenu_item_bg_pressed">#ff292929</color>
+    <color name="leftmenu_item_line">#ff272727</color>
+    <color name="leftmenu_item_offline_line">#ff4bbff6</color>
+    <color name="leftmenu_item_offline_hint">#ff6699cc</color>
+    <!--  -->
+    <color name="item_title_normal">#ff444444</color>
+    <color name="item_title_disabled">#ff888888</color>
+    <color name="item_abstract_normal">#ff444444</color>
+    <color name="item_abstract_disabled">#ff929292</color>
+    <!--  -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- 优车快洗颜色表 -->
+    <color name="select_tab">#41B576</color>
+    <color name="nomal_tab">#9D9D9D</color>
+    <color name="tab_main_text_1">#aaa</color>
+    <color name="tab_main_text_2">#74b5f7</color>
+    <color name="tab_top_text_1">#aaa</color>
+    <color name="tab_top_text_2">#000</color>
+    <color name="tab_top2_text_1">#000</color>
+    <color name="tab_top2_text_2">#fff</color>
+    <color name="white">#fff</color>
+    <color name="itemlist">#f4f4f4</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+    
+    <!-- 商家会员添加员工页面 -->
+    <color name="btn_green">#2DBA5C</color>
+    <color name="btn_deepred">#FF6600</color>
+    
+     <color name="holo_green_dark">#ff669900</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="title_bar_text">#E0A09E</color>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/layout_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_star1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_evaluate_normal" />
+
+            <ImageView
+                android:id="@+id/img_star2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_evaluate_normal" />
+
+            <ImageView
+                android:id="@+id/img_star3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_evaluate_normal" />
+
+            <ImageView
+                android:id="@+id/img_star4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_evaluate_normal" />
+
+            <ImageView
+                android:id="@+id/img_star5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_evaluate_normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_star_Instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_stars"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="点击星星，给商家评分" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout_commentContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_stars"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_firstLine"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_selectPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/test_rectangle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="值得这个价格" />
+
+                <TextView
+                    android:id="@+id/tv_selectService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/test_rectangle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="服务超好" />
+
+                <TextView
+                    android:id="@+id/tv_selectEnvironment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/test_rectangle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="环境好" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_marginTop="10dp"
+                android:id="@+id/layout_secondLine"
+                android:layout_below="@+id/layout_firstLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                 <TextView
+                    android:id="@+id/tv_selectComeAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/test_rectangle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="下次我还来" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/layout_secondLine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="#0099FF" 
+                    android:id="@+id/btn_commit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:text="提交"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    
+
+</LinearLayout>

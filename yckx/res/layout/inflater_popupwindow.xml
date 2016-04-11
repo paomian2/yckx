@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_all"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_shop_all_blue"/>
+
+        <TextView
+            android:id="@+id/tv_all"
+            style="@style/showSelect"
+            android:gravity="center"
+            android:text="全部" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_bank"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_shop_all_blue"/>
+
+        <TextView
+            android:id="@+id/tv_bank"
+            style="@style/showSelect"
+            android:gravity="center"
+            android:text="银行" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:src="@drawable/icon_shop_all_blue"
+            android:id="@+id/img_store"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/tv_store"
+            style="@style/showSelect"
+            android:gravity="center"
+            android:text="停车场" />
+    </LinearLayout>
+
+</LinearLayout>
